@@ -48,7 +48,7 @@ public class PhotoServiceImpl implements PhotoService {
 
     private boolean isValidContentType(MultipartFile multipartFile){
         String extension = FilenameUtils.getExtension(multipartFile.getOriginalFilename());
-        return extension.equals("jpg") || extension.equals("image/jpeg");
+        return extension.equals("jpg") || extension.equals("jpeg");
     }
 
     private String copyFileToDirectory(MultipartFile multipartFile){
